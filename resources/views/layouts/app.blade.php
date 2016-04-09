@@ -42,13 +42,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand">Saimaya</a>
+                    <a class="navbar-brand" href="{{ url('/') }}">Saimaya</a>
                 </div>
                 
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="about-us.html">About Us</a></li>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="{{ url('/home') }}">Home</a></li>
+                        <!-- <li><a href="about-us.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
                         <li class="dropdown">
@@ -61,13 +61,50 @@
                             </ul>
                         </li>
                         <li><a href="blog.html">Blog</a></li> 
-                        <li><a href="contact-us.html">Contact</a></li>                        
+                        <li><a href="contact-us.html">Contact</a></li> -->
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- Authentication Links -->
+                        @if (Auth::guest())
+                            <li><a href="{{ url('/login') }}">Login</a></li>
+                            <li><a href="{{ url('/register') }}">Register</a></li>
+                        @else
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                                </ul>
+                            </li>
+                        @endif
                     </ul>
                 </div>
             </div><!--/.container-->
         </nav>
 
     @yield('content')
+
+    <!-- Footer -->
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    © {{ date('Y') }} Saimaya. All Rights Reserved.
+                </div>
+                <!-- <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Faq</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </footer>
 
     <!-- JavaScripts -->
     <script src="{{ URL::asset('assets/js/jquery.js') }}"></script>
