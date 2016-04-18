@@ -31,3 +31,20 @@ Route::group(['middleware' => ['web']], function () {
 
 	Route::get('/home', 'HomeController@index');
 });
+
+/*
+All admin routes will be added here
+ */
+Route::group(['middleware' => ['admin']], function () {
+	Route::get('/admin', 'Admin\AdminController@index');
+
+	// area
+	Route::get('/admin/area', 'Admin\AreaController@index');
+	Route::post('/admin/area/save', 'Admin\AreaController@save');
+	Route::get('/admin/area/delete/{area}', 'Admin\AreaController@destroy');
+
+	// stop
+	Route::get('/admin/stop', 'Admin\StopController@index');
+	Route::get('/admin/stop/create', 'Admin\StopController@create');
+	Route::get('/admin/stop/delete/{stop}', 'Admin\StopController@destroy');
+});
