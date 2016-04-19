@@ -16,9 +16,40 @@
                     <div class="row slide-margin">
                         <div class="col-sm-6">
                             <div class="carousel-content">
-                                <h1 class="animation animated-item-1">Andman and Nicobar</h1>
-                                <!-- <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2> -->
-                                <!-- <a class="btn-slide animation animated-item-3" href="#">Read More</a> -->
+                                <form class="form-horizontal well col-sm-8 hidden-xs animation animated-item-4">
+                                        <div class="form-group">
+                                            <label for="from-stop" class="col-sm-3 control-label">Source</label>
+                                            <div class="col-sm-9">
+                                                <select class="form-control from-stop">
+                                                    <option>1</option>
+                                                    <option>1</option>
+                                                    <option>1</option>
+                                                </select>
+                                                <!--<input type="text" class="form-control from-stop" placeholder="Source">-->
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="to-stop" class="col-sm-3 control-label">Destination</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="to-stop" placeholder="Destination">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="date" class="col-sm-3 control-label">Date</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="date" placeholder="Date">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">   
+                                            <label for="date" class="col-sm-3 control-label"></label>
+                                            <div class="col-sm-9">
+                                                <button type="button" class="btn btn-primary ">Search Bus</button>
+                                            </div>
+                                        </div>
+                                    </form>
                             </div>
                         </div>
 
@@ -37,9 +68,40 @@
                     <div class="row slide-margin">
                         <div class="col-sm-6">
                             <div class="carousel-content">
-                                <h1 class="animation animated-item-1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
-                                <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
-                                <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                <form class="form-horizontal well col-sm-8 hidden-xs animation animated-item-4">
+                                        <div class="form-group">
+                                            <label for="from-stop" class="col-sm-3 control-label">Source</label>
+                                            <div class="col-sm-9">
+                                                 <select class="form-control from-stop">
+                                                    <option>1</option>
+                                                    <option>1</option>
+                                                    <option>1</option>
+                                                </select>
+                                                <!--<input type="text" class="form-control from-stop" placeholder="Source">-->
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="to-stop" class="col-sm-3 control-label">Destination</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="to-stop" placeholder="Destination">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="date" class="col-sm-3 control-label">Date</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="date" placeholder="Date">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">   
+                                            <label for="date" class="col-sm-3 control-label"></label>
+                                            <div class="col-sm-9">
+                                                <button type="button" class="btn btn-primary ">Search Bus</button>
+                                            </div>
+                                        </div>
+                                    </form>
                             </div>
                         </div>
 
@@ -58,9 +120,40 @@
                     <div class="row slide-margin">
                         <div class="col-sm-6">
                             <div class="carousel-content">
-                                <h1 class="animation animated-item-1">Gateway of India, Mumbai</h1>
-                                <!-- <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2> -->
-                                <!-- <a class="btn-slide animation animated-item-3" href="#">Read More</a> -->
+                               <form class="form-horizontal well col-sm-8 hidden-xs animation animated-item-4">
+                                        <div class="form-group">
+                                            <label for="from-stop" class="col-sm-3 control-label">Source</label>
+                                            <div class="col-sm-9">
+                                                 <select class="form-control from-stop">
+                                                    <option>1</option>
+                                                    <option>1</option>
+                                                    <option>1</option>
+                                                </select>
+                                                <!--<input type="text" class="form-control from-stop" placeholder="Source">-->
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="to-stop" class="col-sm-3 control-label">Destination</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="to-stop" placeholder="Destination">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="date" class="col-sm-3 control-label">Date</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="date" placeholder="Date">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">   
+                                            <label for="date" class="col-sm-3 control-label"></label>
+                                            <div class="col-sm-9">
+                                                <button type="button" class="btn btn-primary ">Search Bus</button>
+                                            </div>
+                                        </div>
+                                    </form>
                             </div>
                         </div>
 

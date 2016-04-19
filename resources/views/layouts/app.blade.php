@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('assets/css/prettyPhoto.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('assets/css/main.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('assets/css/responsive.css') }}">
+     <link rel="stylesheet" type="text/css" href="{{ URL::asset('assets/css/select2.min.css') }}">
 
     <!--[if lt IE 9]>
     <script src="{{ URL::asset('assets/js/html5shiv.js') }}"></script>
@@ -113,6 +114,8 @@
     <script src="{{ URL::asset('assets/js/jquery.isotope.min.js') }}"></script>
     <script src="{{ URL::asset('assets/js/main.js') }}"></script>
     <script src="{{ URL::asset('assets/js/wow.min.js') }}"></script>
+    <script src="{{ URL::asset('assets/js/select2.js') }}"></script>
+    <script src="{{ URL::asset('assets/js/home.js') }}"></script>
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
 </body>
 </html>
