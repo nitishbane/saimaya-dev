@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/getSource','ajaxController@getSource');
+Route::get('/getSource','AjaxController@getSource');
 /*
 |--------------------------------------------------------------------------
 | Application Routes
