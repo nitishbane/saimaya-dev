@@ -16,6 +16,8 @@ Route::get('/', function () {
 });
 
 Route::get('/getSource','AjaxController@getSource');
+Route::get('/getDestination/{id}','AjaxController@getDestination');
+Route::post('/findBus','BusController@findBus');
 /*
 |--------------------------------------------------------------------------
 | Application Routes

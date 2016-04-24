@@ -16,14 +16,13 @@
                     <div class="row slide-margin">
                         <div class="col-sm-6">
                             <div class="carousel-content">
-                                <form class="form-horizontal well col-sm-8 hidden-xs animation animated-item-4">
+                                <form class="form-horizontal well col-sm-8 hidden-xs animation animated-item-4" onSubmit="return validateForm();" method="post" action="{{url('findBus')}}">
+                                        {!! csrf_field() !!}
                                         <div class="form-group">
                                             <label for="from-stop" class="col-sm-3 control-label">Source</label>
                                             <div class="col-sm-9">
-                                                <select class="form-control from-stop">
-                                                    <option>1</option>
-                                                    <option>1</option>
-                                                    <option>1</option>
+                                                <select class="form-control from-stop" name="source">
+                                                    
                                                 </select>
                                                 <!--<input type="text" class="form-control from-stop" placeholder="Source">-->
                                             </div>
@@ -32,21 +31,23 @@
                                         <div class="form-group">
                                             <label for="to-stop" class="col-sm-3 control-label">Destination</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="to-stop" placeholder="Destination">
+                                               <select class="form-control to-stop" name="destination">
+                                                    
+                                                </select>
                                             </div>
                                         </div>
                                         
                                         <div class="form-group">
                                             <label for="date" class="col-sm-3 control-label">Date</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="date" placeholder="Date">
+                                                <input type="text" class="form-control date" placeholder="Date" name="journey_date">
                                             </div>
                                         </div>
                                         
                                         <div class="form-group">   
                                             <label for="date" class="col-sm-3 control-label"></label>
                                             <div class="col-sm-9">
-                                                <button type="button" class="btn btn-primary ">Search Bus</button>
+                                                <button type="submit" class="btn btn-primary ">Search Bus</button>
                                             </div>
                                         </div>
                                     </form>
@@ -68,14 +69,13 @@
                     <div class="row slide-margin">
                         <div class="col-sm-6">
                             <div class="carousel-content">
-                                <form class="form-horizontal well col-sm-8 hidden-xs animation animated-item-4">
+                                <form class="form-horizontal well col-sm-8 hidden-xs animation animated-item-4" onSubmit="return validateForm();" method="post" action="{{url('findBus')}}">
+                                       {!! csrf_field() !!}
                                         <div class="form-group">
                                             <label for="from-stop" class="col-sm-3 control-label">Source</label>
                                             <div class="col-sm-9">
-                                                 <select class="form-control from-stop">
-                                                    <option>1</option>
-                                                    <option>1</option>
-                                                    <option>1</option>
+                                                 <select class="form-control from-stop" name="source">
+                                                   
                                                 </select>
                                                 <!--<input type="text" class="form-control from-stop" placeholder="Source">-->
                                             </div>
@@ -84,21 +84,23 @@
                                         <div class="form-group">
                                             <label for="to-stop" class="col-sm-3 control-label">Destination</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="to-stop" placeholder="Destination">
+                                                <select class="form-control to-stop" name="destination">
+                                                    
+                                                </select>
                                             </div>
                                         </div>
                                         
                                         <div class="form-group">
                                             <label for="date" class="col-sm-3 control-label">Date</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="date" placeholder="Date">
+                                                <input type="text" class="form-control date" placeholder="Date" name="journey_date">
                                             </div>
                                         </div>
                                         
                                         <div class="form-group">   
                                             <label for="date" class="col-sm-3 control-label"></label>
                                             <div class="col-sm-9">
-                                                <button type="button" class="btn btn-primary ">Search Bus</button>
+                                                <button type="submit" class="btn btn-primary ">Search Bus</button>
                                             </div>
                                         </div>
                                     </form>
@@ -120,14 +122,13 @@
                     <div class="row slide-margin">
                         <div class="col-sm-6">
                             <div class="carousel-content">
-                               <form class="form-horizontal well col-sm-8 hidden-xs animation animated-item-4">
+                               <form class="form-horizontal well col-sm-8 hidden-xs animation animated-item-4" onSubmit="return validateForm();" method="post" action="{{url('findBus')}}">
+                                       {!! csrf_field() !!}
                                         <div class="form-group">
                                             <label for="from-stop" class="col-sm-3 control-label">Source</label>
                                             <div class="col-sm-9">
-                                                 <select class="form-control from-stop">
-                                                    <option>1</option>
-                                                    <option>1</option>
-                                                    <option>1</option>
+                                                 <select class="form-control from-stop" name="source">
+                                                    
                                                 </select>
                                                 <!--<input type="text" class="form-control from-stop" placeholder="Source">-->
                                             </div>
@@ -136,21 +137,23 @@
                                         <div class="form-group">
                                             <label for="to-stop" class="col-sm-3 control-label">Destination</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="to-stop" placeholder="Destination">
+                                                <select class="form-control to-stop" name="destination">
+                                                    
+                                                </select>
                                             </div>
                                         </div>
                                         
                                         <div class="form-group">
                                             <label for="date" class="col-sm-3 control-label">Date</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="date" placeholder="Date">
+                                                <input type="text" class="form-control date" class="date" placeholder="Date" name="journey_date">
                                             </div>
                                         </div>
                                         
                                         <div class="form-group">   
                                             <label for="date" class="col-sm-3 control-label"></label>
                                             <div class="col-sm-9">
-                                                <button type="button" class="btn btn-primary ">Search Bus</button>
+                                                <button type="submit" class="btn btn-primary ">Search Bus</button>
                                             </div>
                                         </div>
                                     </form>
