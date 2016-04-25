@@ -47,5 +47,4 @@ Route::group(['middleware' => ['admin']], function () {
 	Route::get('/admin/stop', 'Admin\StopController@index');
 	Route::get('/admin/stop/create', 'Admin\StopController@create');
 	Route::get('/admin/stop/delete/{stop}', 'Admin\StopController@destroy');
-	Route::post('/admin/stop/delete/{stop}', 'Admin\StopController@destroy');
 });
