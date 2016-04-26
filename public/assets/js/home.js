@@ -43,6 +43,7 @@ function getSource()
 		  		{
 		  			$(this).val(data.id);
 		  		});
+		  		$('input[name="hidden_source"]').val(data.text);
 				$('.from-stop').parent().find('.select2-selection__rendered').html(data.text);
 				if(data.id == 'Select')
 					$('.to-stop').prop("disabled", true);
@@ -84,7 +85,7 @@ function getDestination(data)
 		  			$(this).val(data.id);
 		  		});
 				$('.to-stop').parent().find('.select2-selection__rendered').html(data.text);
-				
+				$('input[name="hidden_dest"]').val(data.text);
 			});
 }
 

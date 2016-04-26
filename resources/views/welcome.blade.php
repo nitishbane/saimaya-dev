@@ -24,7 +24,7 @@
                                                 <select class="form-control from-stop" name="source">
                                                     
                                                 </select>
-                                                <!--<input type="text" class="form-control from-stop" placeholder="Source">-->
+                                                <input type="hidden" class="form-control" name="hidden_source">
                                             </div>
                                         </div>
                                         
@@ -34,6 +34,7 @@
                                                <select class="form-control to-stop" name="destination">
                                                     
                                                 </select>
+                                                <input type="hidden" class="form-control" name="hidden_dest">
                                             </div>
                                         </div>
                                         
@@ -77,7 +78,7 @@
                                                  <select class="form-control from-stop" name="source">
                                                    
                                                 </select>
-                                                <!--<input type="text" class="form-control from-stop" placeholder="Source">-->
+                                                <input type="hidden" class="form-control" name="hidden_source">
                                             </div>
                                         </div>
                                         
@@ -87,6 +88,7 @@
                                                 <select class="form-control to-stop" name="destination">
                                                     
                                                 </select>
+                                                <input type="hidden" class="form-control" name="hidden_dest">
                                             </div>
                                         </div>
                                         
@@ -130,7 +132,7 @@
                                                  <select class="form-control from-stop" name="source">
                                                     
                                                 </select>
-                                                <!--<input type="text" class="form-control from-stop" placeholder="Source">-->
+                                                <input type="hidden" class="form-control" placeholder="Date" name="hidden_source">
                                             </div>
                                         </div>
                                         
@@ -140,13 +142,14 @@
                                                 <select class="form-control to-stop" name="destination">
                                                     
                                                 </select>
+                                                <input type="hidden" class="form-control" name="hidden_dest">
                                             </div>
                                         </div>
                                         
                                         <div class="form-group">
                                             <label for="date" class="col-sm-3 control-label">Date</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control date" class="date" placeholder="Date" name="journey_date">
+                                                <input type="text" class="form-control date" placeholder="Date" name="journey_date">
                                             </div>
                                         </div>
                                         
