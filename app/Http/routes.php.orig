@@ -37,6 +37,8 @@ All admin routes will be added here
  */
 Route::group(['middleware' => ['admin']], function () {
 	Route::get('/admin', 'Admin\AdminController@index');
+<<<<<<< HEAD
+=======
 
 	// area
 	Route::get('/admin/area', 'Admin\AreaController@index');
@@ -47,4 +49,5 @@ Route::group(['middleware' => ['admin']], function () {
 	Route::get('/admin/stop', 'Admin\StopController@index');
 	Route::get('/admin/stop/create', 'Admin\StopController@create');
 	Route::get('/admin/stop/delete/{stop}', 'Admin\StopController@destroy');
+>>>>>>> cb52877476d421485af18f7ea306460074b9538b
 });
