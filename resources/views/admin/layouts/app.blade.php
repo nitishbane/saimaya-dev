@@ -81,6 +81,9 @@
                         <li>
                             <a href="{{ URL('admin/stop') }}"><i class="fa fa-building fa-fw"></i> Stop</a>
                         </li>
+                        <li>
+                            <a href="{{ URL('admin/bus') }}"><i class="fa fa-bus fa-fw"></i> Bus</a>
+                        </li>
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
@@ -110,7 +113,7 @@
     <!-- Custom Theme JavaScript -->
     <script src="{{ URL::asset('assets/js/sb-admin-2.js') }}"></script>
 
-    <!-- @yield('js_content') -->
+    @yield('js_content')
 
 </body>
 

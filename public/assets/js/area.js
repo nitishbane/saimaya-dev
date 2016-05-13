@@ -1,4 +1,4 @@
-function dofuck(){
+function doarea(){
 	$(".edit-area").on("click", function(){
 		var area = $(this).data("area");
 		// console.log($("#area-name").val());
