@@ -18,6 +18,7 @@ Route::get('/', function () {
 Route::get('/getSource','AjaxController@getSource');
 Route::get('/getDestination/{id}','AjaxController@getDestination');
 Route::post('/findBus','BusController@findBus');
+Route::post('/bookticket','BusController@bookTicket');
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -34,6 +35,9 @@ Route::group(['middleware' => ['web']], function () {
 
 	Route::get('/home', 'HomeController@index');
 });
+
+Route::get('/getSeatInfo','BusController@getSeatInfo');
+// this is after make the payment, PayPal redirect back to your site
 
 /*
 All admin routes will be added here

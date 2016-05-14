@@ -86,6 +86,16 @@
                 </div>
             </div><!--/.container-->
         </nav>
+         <script src="{{ URL::asset('assets/js/jquery.js') }}"></script>
+    <script src="{{ URL::asset('assets/js/bootstrap.min.js') }}"></script>
+    <script src="{{ URL::asset('assets/js/jquery.prettyPhoto.js') }}"></script>
+    <script src="{{ URL::asset('assets/js/jquery.isotope.min.js') }}"></script>
+    <script src="{{ URL::asset('assets/js/main.js') }}"></script>
+    <script src="{{ URL::asset('assets/js/wow.min.js') }}"></script>
+    <script src="{{ URL::asset('assets/js/select2.js') }}"></script>
+    <script src="{{ URL::asset('assets/js/home.js') }}"></script>
+    <script src="{{ URL::asset('https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js') }}"></script>
+    {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
 
     @yield('content')
 
@@ -109,15 +119,6 @@
     </footer>
 
     <!-- JavaScripts -->
-    <script src="{{ URL::asset('assets/js/jquery.js') }}"></script>
-    <script src="{{ URL::asset('assets/js/bootstrap.min.js') }}"></script>
-    <script src="{{ URL::asset('assets/js/jquery.prettyPhoto.js') }}"></script>
-    <script src="{{ URL::asset('assets/js/jquery.isotope.min.js') }}"></script>
-    <script src="{{ URL::asset('assets/js/main.js') }}"></script>
-    <script src="{{ URL::asset('assets/js/wow.min.js') }}"></script>
-    <script src="{{ URL::asset('assets/js/select2.js') }}"></script>
-    <script src="{{ URL::asset('assets/js/home.js') }}"></script>
-     <script src="{{ URL::asset('https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js') }}"></script>
-    {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
+   
 </body>
 </html>

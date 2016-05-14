@@ -17,6 +17,7 @@ class AjaxController extends Controller
     					->join('routes','cities.id','=','routes.source_city_id')
     					->select('cities.id','cities.name as text')
     					->distinct()
+              ->where('cities.is_delete',0)
     					->get();
     	//echo json_encode($source);
       return response()->json($source);
@@ -28,7 +29,10 @@ class AjaxController extends Controller
                           ->join('routes','cities.id','=','routes.destination_city_id')  
                           ->select('cities.id','cities.name as text')
                           ->distinct()
-                          ->where('routes.source_city_id',$source_id)
+                          ->where([
+                            ['routes.source_city_id',$source_id],
+                            ['routes.is_delete',0]
+                            ])
                           ->get();
         //echo json_encode($destination);
         return response()->json($destination);                  
