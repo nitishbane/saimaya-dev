@@ -53,5 +53,14 @@ Route::group(['middleware' => ['admin']], function () {
 	// stop
 	Route::get('/admin/stop', 'Admin\StopController@index');
 	Route::get('/admin/stop/create', 'Admin\StopController@create');
+	Route::get('/admin/stop/edit/{stop}', 'Admin\StopController@edit');
+	Route::post('/admin/stop/save', 'Admin\StopController@save');
 	Route::get('/admin/stop/delete/{stop}', 'Admin\StopController@destroy');
+
+	// bus
+	Route::get('/admin/bus', 'Admin\BusController@index');
+	Route::get('/admin/bus/create', 'Admin\BusController@create');
+	Route::get('/admin/bus/edit/{bus}', 'Admin\BusController@edit');
+	Route::post('/admin/bus/save', 'Admin\BusController@save');
+	Route::get('/admin/bus/delete/{bus}', 'Admin\BusController@destroy');
 });
