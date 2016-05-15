@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/getSource','AjaxController@getSource');
+Route::get('/getDestination/{id}','AjaxController@getDestination');
+Route::post('/findBus','BusController@findBus');
+Route::post('/bookticket','BusController@bookTicket');
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -32,6 +36,9 @@ Route::group(['middleware' => ['web']], function () {
 	Route::get('/home', 'HomeController@index');
 });
 
+Route::get('/getSeatInfo','BusController@getSeatInfo');
+// this is after make the payment, PayPal redirect back to your site
+
 /*
 All admin routes will be added here
  */
@@ -46,5 +53,14 @@ Route::group(['middleware' => ['admin']], function () {
 	// stop
 	Route::get('/admin/stop', 'Admin\StopController@index');
 	Route::get('/admin/stop/create', 'Admin\StopController@create');
+	Route::get('/admin/stop/edit/{stop}', 'Admin\StopController@edit');
+	Route::post('/admin/stop/save', 'Admin\StopController@save');
 	Route::get('/admin/stop/delete/{stop}', 'Admin\StopController@destroy');
+
+	// bus
+	Route::get('/admin/bus', 'Admin\BusController@index');
+	Route::get('/admin/bus/create', 'Admin\BusController@create');
+	Route::get('/admin/bus/edit/{bus}', 'Admin\BusController@edit');
+	Route::post('/admin/bus/save', 'Admin\BusController@save');
+	Route::get('/admin/bus/delete/{bus}', 'Admin\BusController@destroy');
 });

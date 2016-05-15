@@ -16,9 +16,42 @@
                     <div class="row slide-margin">
                         <div class="col-sm-6">
                             <div class="carousel-content">
-                                <h1 class="animation animated-item-1">Andman and Nicobar</h1>
-                                <!-- <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2> -->
-                                <!-- <a class="btn-slide animation animated-item-3" href="#">Read More</a> -->
+                                <form class="form-horizontal well col-sm-8 hidden-xs animation animated-item-4" onSubmit="return validateForm();" method="post" action="{{url('findBus')}}">
+                                        {!! csrf_field() !!}
+                                        <div class="form-group">
+                                            <label for="from-stop" class="col-sm-3 control-label">Source</label>
+                                            <div class="col-sm-9">
+                                                <select class="form-control from-stop" name="source">
+                                                    
+                                                </select>
+                                                <input type="hidden" class="form-control" name="hidden_source">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="to-stop" class="col-sm-3 control-label">Destination</label>
+                                            <div class="col-sm-9">
+                                               <select class="form-control to-stop" name="destination">
+                                                    
+                                                </select>
+                                                <input type="hidden" class="form-control" name="hidden_dest">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="date" class="col-sm-3 control-label">Date</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control date" placeholder="Date" name="journey_date">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">   
+                                            <label for="date" class="col-sm-3 control-label"></label>
+                                            <div class="col-sm-9">
+                                                <button type="submit" class="btn btn-primary ">Search Bus</button>
+                                            </div>
+                                        </div>
+                                    </form>
                             </div>
                         </div>
 
@@ -37,9 +70,42 @@
                     <div class="row slide-margin">
                         <div class="col-sm-6">
                             <div class="carousel-content">
-                                <h1 class="animation animated-item-1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
-                                <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
-                                <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                <form class="form-horizontal well col-sm-8 hidden-xs animation animated-item-4" onSubmit="return validateForm();" method="post" action="{{url('findBus')}}">
+                                       {!! csrf_field() !!}
+                                        <div class="form-group">
+                                            <label for="from-stop" class="col-sm-3 control-label">Source</label>
+                                            <div class="col-sm-9">
+                                                 <select class="form-control from-stop" name="source">
+                                                   
+                                                </select>
+                                                <input type="hidden" class="form-control" name="hidden_source">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="to-stop" class="col-sm-3 control-label">Destination</label>
+                                            <div class="col-sm-9">
+                                                <select class="form-control to-stop" name="destination">
+                                                    
+                                                </select>
+                                                <input type="hidden" class="form-control" name="hidden_dest">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="date" class="col-sm-3 control-label">Date</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control date" placeholder="Date" name="journey_date">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">   
+                                            <label for="date" class="col-sm-3 control-label"></label>
+                                            <div class="col-sm-9">
+                                                <button type="submit" class="btn btn-primary ">Search Bus</button>
+                                            </div>
+                                        </div>
+                                    </form>
                             </div>
                         </div>
 
@@ -58,9 +124,42 @@
                     <div class="row slide-margin">
                         <div class="col-sm-6">
                             <div class="carousel-content">
-                                <h1 class="animation animated-item-1">Gateway of India, Mumbai</h1>
-                                <!-- <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2> -->
-                                <!-- <a class="btn-slide animation animated-item-3" href="#">Read More</a> -->
+                               <form class="form-horizontal well col-sm-8 hidden-xs animation animated-item-4" onSubmit="return validateForm();" method="post" action="{{url('findBus')}}">
+                                       {!! csrf_field() !!}
+                                        <div class="form-group">
+                                            <label for="from-stop" class="col-sm-3 control-label">Source</label>
+                                            <div class="col-sm-9">
+                                                 <select class="form-control from-stop" name="source">
+                                                    
+                                                </select>
+                                                <input type="hidden" class="form-control" placeholder="Date" name="hidden_source">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="to-stop" class="col-sm-3 control-label">Destination</label>
+                                            <div class="col-sm-9">
+                                                <select class="form-control to-stop" name="destination">
+                                                    
+                                                </select>
+                                                <input type="hidden" class="form-control" name="hidden_dest">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="date" class="col-sm-3 control-label">Date</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control date" placeholder="Date" name="journey_date">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">   
+                                            <label for="date" class="col-sm-3 control-label"></label>
+                                            <div class="col-sm-9">
+                                                <button type="submit" class="btn btn-primary ">Search Bus</button>
+                                            </div>
+                                        </div>
+                                    </form>
                             </div>
                         </div>
 
