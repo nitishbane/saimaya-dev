@@ -1,0 +1,75 @@
+
+.bgcontent_inner {
+    margin: 0px 0px 0px 0px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.pagecap {
+    padding: 10px 12px 10px 12px;
+    min-height: 400px;
+}
+.clear {
+    clear: both;
+    float: none;
+}
+.left-side-column {
+    font-family: Tahoma, Helvetica, Arial;
+    width: 60%;
+    display: inline;
+    height: 100%;
+    padding: 5px 0px;
+    float:left;
+}
+.right-side-column {
+    padding-bottom: 5px;
+    width: 40%;
+    display: inline;
+}
+.tooltips div {
+    display: none;
+}
+.tooltips {
+    width: 45px;
+    height: 35px;
+    /* background-color: #F3FDFF; */
+    background-color: #18598C;
+    color: White;
+    border: solid 0px #18598C;
+}
+.tableCell {
+    width: 45px;
+    height: 50px;
+    background-color: #18598C;
+    color: White;
+    font-weight: normal;
+    cursor: pointer;
+}
+.Booked {
+    width: 45px;
+    height: 50px;
+    background-color: Fuchsia;
+    color: White;
+    font-weight: bold;
+}
+.selected{
+	background-color : maroon;
+}
+.modal-dialog{
+    width:95%;
+}
+.seat-container{
+    clear: both;
+    float: none;
+}
+.sleeper,.seater{
+display: none;
+
+}
+.sleeper .tableCell
+{
+     height: 80px;
+}
+.modal-body{
+   overflow:auto; 
+
+}
