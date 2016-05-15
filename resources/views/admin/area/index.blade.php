@@ -106,7 +106,7 @@
 
 <script type="text/javascript">
 $(document).ready(function(){
-    dofuck();
+    doarea();
 })
 </script>
 @endsection
