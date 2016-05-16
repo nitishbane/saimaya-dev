@@ -84,6 +84,9 @@
                         <li>
                             <a href="{{ URL('admin/bus') }}"><i class="fa fa-bus fa-fw"></i> Bus</a>
                         </li>
+                        <li>
+                            <a href="{{ URL('admin/route') }}"><i class="fa fa-bus fa-fw"></i> Route</a>
+                        </li>
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
