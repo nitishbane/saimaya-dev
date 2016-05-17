@@ -3,9 +3,6 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-
-class Route extends Model
-{
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Route extends Model
