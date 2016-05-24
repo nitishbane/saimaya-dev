@@ -39,8 +39,6 @@ class BusController extends Controller
                         })
                         ->get();     
     	
-       // echo '<pre>';				
-        //print_r($buses);
         //store source and destination in sesion
         $request->session()->put('journey_details',$details);
         return view('buslist',['buses'=>$buses,'details'=>$details]);
@@ -48,23 +46,39 @@ class BusController extends Controller
 
     public function bookTicket(Request $request)
     {
+		
         //store all form data in session
         $request->session()->put('seat_details',$request->all());
-        $journey_details =  $request->session()->get('journey_details');
-        $booking = array();
-        foreach($request->pname as $k =>$v)
-        {
-             $booking[] = [
-                'bus_route_map_id' => $request->bus_route_map,
-                'seat_no' => $request->seats[$k],
-                'passenger_name' =>  $request->pname[$k],
-                'gender' => $request->gender[$k],
-                'journey_date' => $journey_details["date"]
-             ];  
-        }
-        DB::table('bookings')->insert($booking);
-        //echo '<pre>';
-        //print_r($request->all());
+        $journey_details =  $request->session()->get('journey_details');	
+		$booking_rows = DB::table('bookings')
+							->select('*')
+							->whereIn('seat_no',$request->seats)
+							->where('journey_date',$journey_details["date"])
+							->get();
+							
+				
+		if(sizeof($booking_rows) == 0)
+		{
+			$booking = array();
+			foreach($request->pname as $k =>$v)
+			{
+				$booking[] = [
+					'bus_route_map_id' => $request->bus_route_map,
+					'seat_no' => $request->seats[$k],
+					'passenger_name' =>  $request->pname[$k],
+					'gender' => $request->gender[$k],
+					'journey_date' => $journey_details["date"]
+				];  
+			}
+			DB::table('bookings')->insert($booking);
+		}
+		else
+		{
+		
+			echo 'The Seats You Have Selected Are already Booked.Please Refresh page and select another seats';
+		}
+			
+        
     }
 
     public function getSeatInfo(Request $request)

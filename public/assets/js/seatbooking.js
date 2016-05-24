@@ -95,9 +95,24 @@ function createPassengerDetails()
 
 function validateSeats()
 {
-	$('input[name="pname[]"]').each(function()
+	if($('.tableCell.selected').length == 0)
 	{
-
-	});	
+		alert('Please Select Atleast 1 Seat');
+		return false;
+	}
+	else
+	{
+		var isNameFilled = true;
+		$('input[name="pname[]"]').each(function()
+		{
+			if($(this).val() == '')
+				isNameFilled = false;
+		});
+		if(!isNameFilled)	
+		{
+			alert('Please Enter Passenger Name');
+			return false;
+		}	
+	}
 
 }
