@@ -26,8 +26,8 @@ class BusController extends Controller
                         ->where([
                             ['routes.source_city_id','=',$source],
                             ['routes.destination_city_id','=',$destination],
-                            ['buses.is_delete','=',0],
-                            ['routes.is_delete','=',0]
+                            ['buses.deleted_at','=',NULL],
+                            ['routes.deleted_at','=',NULL]
                             ])
                         ->groupBy('bus_route_maps.id')
                         //->select(DB::raw('count(bookings.seat_no)as total_seats'),)
