@@ -50,6 +50,9 @@ Route::group(['middleware' => ['admin']], function () {
 	Route::get('/admin/area', 'Admin\AreaController@index');
 	Route::post('/admin/area/save', 'Admin\AreaController@save');
 	Route::get('/admin/area/delete/{area}', 'Admin\AreaController@destroy');
+	
+	// get stops by area id
+	Route::get('/admin/stop/getStops/{area}', 'Admin\StopController@get_stops');
 
 	// stop
 	Route::get('/admin/stop', 'Admin\StopController@index');

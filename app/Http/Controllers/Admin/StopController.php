@@ -101,4 +101,30 @@ class StopController extends Controller
             }
         }
     }
+    
+    /**
+     * Get all stops by area
+     */
+    public function get_stops(Request $request, Area $area)
+    {
+        if($request->ajax()){
+            $stops = Stop::where('area_id', $area->id)
+                    ->orderBy('name', 'asc')
+                    ->get();
+            
+            if(count($stops)){
+                return response()->json([
+                    'data' => $stops
+                ]);
+            }else{
+                return response()->json([
+                    'data' => "0"
+                ]);
+            }
+        }else{
+            return response()->json([
+                'data' => "0"
+            ]);
+        }
+    }
 }
