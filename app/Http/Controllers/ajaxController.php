@@ -31,7 +31,7 @@ class AjaxController extends Controller
                           ->distinct()
                           ->where([
                             ['routes.source_city_id',$source_id],
-                            ['routes.is_delete',0]
+                            ['routes.deleted_at',NULL]
                             ])
                           ->get();
         //echo json_encode($destination);
