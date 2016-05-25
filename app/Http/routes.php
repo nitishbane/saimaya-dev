@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/pdf','PdfController@createPdf');
+
 Route::get('/getSource','AjaxController@getSource');
 Route::get('/getDestination/{id}','AjaxController@getDestination');
 Route::post('/findBus','BusController@findBus');

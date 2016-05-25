@@ -5,6 +5,3 @@ Homestead.yaml
 Homestead.json
 .env
 app/Http/routes.php.orig
-public/assets/css/bootstrap-theme.min.css
-*.css
-*.php
